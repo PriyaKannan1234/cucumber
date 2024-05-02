@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner" project="Cucumber" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runners.LoginRunner" time="25.534">
+    <testsuite name="CodeFios login page functionality validation" time="25.534">
+      <testcase name="1 User should be able to login with valid credentials" classname="CodeFios login page functionality validation" time="25.534">
+        <error>java.lang.NullPointerException&#13;
+	at steps.AddAccountStepDefinition.user_clicks_on_list_accounts_button(AddAccountStepDefinition.java:57)&#13;
+	at ✽.User clicks on list accounts button(classpath:features/AddAccount.feature:15)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

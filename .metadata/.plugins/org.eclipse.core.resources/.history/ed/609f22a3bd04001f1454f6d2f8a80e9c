@@ -1,0 +1,20 @@
+package pages;
+
+public class Database {
+
+	 public String getDataFromDb() {
+
+// set the properties for my 
+	
+		 
+		 
+		 
+	
+	
+	
+		 
+		 return null;
+		 
+	 }
+	 
+}

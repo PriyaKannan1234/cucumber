@@ -1,0 +1,22 @@
+package pages;
+
+public class Database {
+
+	 public String getDataFromDb() {
+
+// set the properties for MYSQL 
+		 
+		 class.forName
+	
+		 
+		 
+		 
+	
+	
+	
+		 
+		 return null;
+		 
+	 }
+	 
+}

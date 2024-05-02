@@ -1,0 +1,17 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class AddAccountPage {
+	WebDriver driver;
+
+	public class AddAccountPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	
+	
+	
+	
+	
+}

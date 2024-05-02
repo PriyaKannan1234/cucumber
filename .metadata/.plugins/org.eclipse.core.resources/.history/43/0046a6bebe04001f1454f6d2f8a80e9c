@@ -1,0 +1,29 @@
+package pages;
+
+public class Database {
+
+	 public String getDataFromDb() {
+
+// set the properties for MYSQL 
+// Never use Add Throws; Only Try and Catch
+// Class arguments 	 
+		 try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+		
+			e.printStackTrace();
+		}
+		 
+	
+		 
+		 
+		 
+	
+	
+	
+		 
+		 return null;
+		 
+	 }
+	 
+}

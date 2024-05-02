@@ -1,0 +1,23 @@
+package pages;
+
+public class Database {
+
+	 public String getDataFromDb() {
+
+// set the properties for MYSQL 
+// Never use Add Throws; Only Try and Catch
+		 
+		 class.forName("com.mysql.cj.")
+	
+		 
+		 
+		 
+	
+	
+	
+		 
+		 return null;
+		 
+	 }
+	 
+}

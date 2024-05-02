@@ -1,0 +1,274 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-02T02:24:09.179Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1915649500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "1 User should be able to login with valid credentials",
+        "description": "",
+        "id": "codefios-login-page-functionality-validation;1-user-should-be-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2130334100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.AddAccountStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1807485300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is on codefios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_codefios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3178538800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters username as \"demo@codefios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@codefios.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefinition.userEntersUserNameAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3139225000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8701564100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 390428100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User lands on dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_lands_on_dashboard_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2115581800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks on list accounts button",
+            "match": {
+              "location": "steps.AddAccountStepDefinition.user_clicks_on_list_accounts_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3106007900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on add account button",
+            "match": {
+              "location": "steps.AddAccountStepDefinition.user_clicks_on_add_account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3144257100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters account name as \"TestAddOct23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestAddOct23\"",
+                  "offset": 28
+                }
+              ],
+              "location": "steps.AddAccountStepDefinition.user_enters_account_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3163208600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters description as \"TestAddOct23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestAddOct23\"",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.AddAccountStepDefinition.user_enters_description(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3096249800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enters initial balance as \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.AddAccountStepDefinition.user_enters_initial_balance(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3133398200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters account number as \"654879345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"654879345\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.AddAccountStepDefinition.user_enters_account_number(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3108330400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enters contact person as \"TestingDemo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TestingDemo\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.AddAccountStepDefinition.user_enters_contact_person(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3101643700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks on save button",
+            "match": {
+              "location": "steps.AddAccountStepDefinition.user_clicks_on_save_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(text(),\u0027Account Added Successfully.\u0027)]\"}\n  (Session info: chrome\u003d124.0.6367.118)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-N8OU58C\u0027, ip: \u0027192.168.1.48\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.20\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.118, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\\Users\\kanna\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 427a1f3ee0cb292df4b724e198de9c47\n*** Element info: {Using\u003dxpath, value\u003d//div[contains(text(),\u0027Account Added Successfully.\u0027)]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.getText(Unknown Source)\r\n\tat pages.AddAccountPage.getAccountAddedAlertText(AddAccountPage.java:42)\r\n\tat steps.AddAccountStepDefinition.user_should_be_able_to_see_account_added_alert(AddAccountStepDefinition.java:99)\r\n\tat ✽.User should be able to see account added alert(classpath:features/AddAccount.feature:24)\r\n",
+              "duration": 49016200,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "User should be able to see account added alert",
+            "match": {
+              "location": "steps.AddAccountStepDefinition.user_should_be_able_to_see_account_added_alert()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddAccountFeature"
+          },
+          {
+            "name": "@AddAccountScenario1"
+          }
+        ]
+      }
+    ],
+    "name": "CodeFios login page functionality validation",
+    "description": "//Background:",
+    "id": "codefios-login-page-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/AddAccount.feature",
+    "tags": [
+      {
+        "name": "@AddAccountFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

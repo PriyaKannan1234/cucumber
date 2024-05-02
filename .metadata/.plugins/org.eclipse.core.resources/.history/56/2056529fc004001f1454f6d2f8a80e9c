@@ -1,0 +1,47 @@
+package pages;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Database {
+	
+	Connection connection;
+	Statement statement;
+	ResultSet resultSet;
+
+	 public String getDataFromDb() {
+
+// set the properties for MYSQL 
+// Never use Add Throws; Only Try and Catch
+// Class arguments 	 - driver that gets datas from Database
+		 try {
+			 
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			String sqlUsername = "student";
+			String sqlPassword = "Student@123";
+			String sqlUrl = "jdbc:mysql:\\44.195.13.80"
+					
+			 connection = DriverManager.getConnection(url, user, password)
+			 statement
+			 resultSet
+			
+		} catch (ClassNotFoundException e) {
+		
+			e.printStackTrace();
+		}
+		 
+	
+		 
+		 
+		 
+	
+	
+	
+		 
+		 return null;
+		 
+	 }
+	 
+}

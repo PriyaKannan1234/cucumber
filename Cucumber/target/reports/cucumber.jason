@@ -1,0 +1,96 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-21T12:17:40.337Z",
+        "line": 3,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "codefios-login-page-functionality-validation;user-should-be-able-to-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3869801800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on codefios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_codefios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3228989300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters username as \"demo@codefios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@codefios.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefinition.userEntersUserNameAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3098452500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12195572200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User lands on dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_lands_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CodeFios login page functionality validation",
+    "description": "",
+    "id": "codefios-login-page-functionality-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CodeFiosLogin.feature",
+    "tags": []
+  }
+]
