@@ -1,6 +1,5 @@
 package pages;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,27 +9,28 @@ public class LoginPage {
 	WebDriver driver;
 
 	// Constructor:
-	// special method as same name as the class name 
+	// special method as same name as the class name
 	// no access modifier - static OR non static
-	// no return type 
+	// no return type
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	// Object initiation we can do as a Global declaration
-	// But defining webElement object we have to do inside the methods only not as Global
-	
-		// Element Library
+	// But defining webElement object we have to do inside the methods only not as
+	// Global
+
+	// Element Library
 	@FindBy(how = How.XPATH, using = "//input[@id='user_name']")
 	WebElement UserName;
-	
+
 	@FindBy(how = How.XPATH, using = "//input[@id='password']")
 	WebElement Password;
-	
+
 	@FindBy(how = How.XPATH, using = "//button[@id='login_submit']")
 	WebElement SignInButton;
-	
+
 	// Methods to interact with the elements
 	public void enterUserName(String userName) {
 		UserName.sendKeys(userName);
@@ -40,6 +40,7 @@ public class LoginPage {
 			e.printStackTrace();
 		}
 	}
+
 	public void enterPassword(String password) {
 		Password.sendKeys(password);
 		try {
@@ -48,8 +49,7 @@ public class LoginPage {
 			e.printStackTrace();
 		}
 	}
-	
-	
+
 	public void clickSignInButton() {
 		SignInButton.click();
 //
@@ -59,9 +59,10 @@ public class LoginPage {
 //			e.printStackTrace();
 //		}
 	}
+
 	public String getPageTitle() {
 		return driver.getTitle();
 
 	}
-	
+
 }

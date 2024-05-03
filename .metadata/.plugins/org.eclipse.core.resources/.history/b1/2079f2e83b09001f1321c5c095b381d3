@@ -1,0 +1,87 @@
+package pages;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestBase {
+
+// TakesScreenshot is an Interface that needs to pass the WebDriver driver - reference variable
+// In order to take the screenshots, we need reference variable of WebDriver Interface
+// WebDriver extending TakesScreenshot 
+// It has only one method getScreenshotAs()
+// TakesScreenShot needs WebDriver to work with as its an interface which needs reference variable parameter
+
+// new keyword is a keyword that uses to create an object of class - (constructor)
+
+// Type Casting means we have to just wrapped it with reference variable driver
+// We have to create a variable to hold the Screenshots as File variable called as Source File
+// If we have any import error then we can do java.io if we write it before code
+// then problem gets solved
+
+// so always go with java.io Imports instead of others 
+	public static WebDriver driver;
+
+	public static void initDriver() {
+		System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+//		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+
+// TimeUnit
+ // if
+// //  is Enum if we hover over shows Enum 
+
+	}
+
+	public void takeScreenshot(WebDriver driver) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+
+		SimpleDateFormat formatter = new SimpleDateFormat("Mmddyy_HHmmss");
+		Date date = new Date();
+
+		String label = formatter.format(date);
+
+		try {
+			// FileUtils.copyFile(sourceFile, new File(System.getProperty("user.dir") +
+			// "/screenshots/" + System.currentTimeMillis()+ ".png" ));
+			FileUtils.copyFile(sourceFile, new File(System.getProperty("user.dir") + "/screenshots/" + label + ".png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+
+
+// everytime we want to save a new screenshot & we don't want to over written that 
+// so we have to use a NEW word here - very important
+
+// Since WebDriver is a Interface, we won't create an object
+// we're creating reference variable
+// ChromeDriver class extends Remote WebDriver class that implements
+// WebDriver(I), JavaScriptExecutor(I), takeScreenShot(I)
+// (HasPutDevices,HasCapabilities, Interactive - these 3 not much
+// important)
+
+/*
+ * public void selectFromDropdown(WebElement element, String visibleText) {
+ * Select sel = new Select(element); sel.selectByVisibleText(visibleText); }
+ * 
+ * public int generateRandomNum(int boundryNum) { Random rnd = new Random(); int
+ * generatedNum = rnd.nextInt(999); return generatedNum;
+ */

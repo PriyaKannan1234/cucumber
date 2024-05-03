@@ -5,58 +5,60 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AddAccountPage{
+public class AddAccountPage {
 	WebDriver driver;
 
 	public AddAccountPage(WebDriver driver) {
 		this.driver = driver;
 	}
+
 	@FindBy(how = How.XPATH, using = "//span[text()='List Accounts']")
 	WebElement ListAccountsButton;
-	
+
 	@FindBy(how = How.XPATH, using = "//button[@class='btn btn-primary']")
 	WebElement AddAccountButton;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='account_name']")
 	WebElement AccountName;
-	
+
 	@FindBy(how = How.XPATH, using = "//textarea[@id='description']")
 	WebElement Description;
-	
+
 	@FindBy(how = How.XPATH, using = "//input[@id='balance']")
 	WebElement InitialBalance;
-	
+
 	@FindBy(how = How.XPATH, using = "//input[@id='account_number']")
 	WebElement AccountNumber;
-	
+
 	@FindBy(how = How.XPATH, using = "//input[@id='contact_person']")
 	WebElement ContactPerson;
-	
+
 	@FindBy(how = How.XPATH, using = "//button[@id='accountSave']")
 	WebElement SaveButton;
-	
+
 	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Account Added Successfully.')]")
 	WebElement SuccessAlert;
-	
-	public String getAccountAddedAlertText(){
+
+	public String getAccountAddedAlertText() {
 		return SuccessAlert.getText();
-		
+
 	}
-	
+
 	public void clickListAccountsButton() {
 		ListAccountsButton.click();
-//
-//		try {
-//			Thread.sleep(3000);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
+
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
+
 	public String getPageTitle() {
 		return driver.getTitle();
 
 	}
-		
+
 	public void clickAddAccountButton() {
 		AddAccountButton.click();
 
@@ -66,14 +68,16 @@ public class AddAccountPage{
 			e.printStackTrace();
 		}
 	}
+
 	public void enterAccountName(String accountName) {
 		AccountName.sendKeys(accountName);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-		e.printStackTrace();
+			e.printStackTrace();
+		}
 	}
-	}
+
 	public void enterDescription(String description) {
 		Description.sendKeys(description);
 
@@ -81,8 +85,9 @@ public class AddAccountPage{
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+		}
 	}
-	}
+
 	public void enterInitialBalance(String initialBalance) {
 		InitialBalance.sendKeys(initialBalance);
 		try {
@@ -91,14 +96,16 @@ public class AddAccountPage{
 			e.printStackTrace();
 		}
 	}
+
 	public void enterAccountNumber(String accountNumber) {
-		 AccountNumber.sendKeys(accountNumber);
+		AccountNumber.sendKeys(accountNumber);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
+
 	public void enterContactPerson(String contactPerson) {
 		ContactPerson.sendKeys(contactPerson);
 		try {
@@ -111,16 +118,11 @@ public class AddAccountPage{
 	public void clickSaveButton() {
 		SaveButton.click();
 
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 	}
-	
-}	
-	
-	
-	
-	
 
+}

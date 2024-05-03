@@ -12,16 +12,16 @@ import pages.TestBase;
 
 public class LoginStepDefinition extends TestBase {
 	LoginPage loginPage;
-	
+
 // LoginStepDefinition extends TestBase class
 // TestBase extends Util class
-	
+
 	@Before
 	public void beforeRun() {
 		initDriver();
-	    loginPage = PageFactory.initElements(driver,LoginPage.class);
+		loginPage = PageFactory.initElements(driver, LoginPage.class);
 	}
-	
+
 //	We need java.IO - Import that is very very important
 // snake_case
 
@@ -32,7 +32,7 @@ public class LoginStepDefinition extends TestBase {
 	}
 
 // camelCase
-	
+
 	@When("User enters username as {string}")
 	public void userEntersUserNameAs(String username) {
 		loginPage.enterUserName(username);
@@ -42,15 +42,16 @@ public class LoginStepDefinition extends TestBase {
 	public void user_enters_password_as(String password) {
 		loginPage.enterPassword(password);
 	}
-//	@When("User enters {string} from mysql database")
-//	public void user_enters_from_mysql_database(String string) {
-//		
-//	}
-	
+
+	@When("User enters {string} from mysql database")
+	public void user_enters_from_mysql_database(String string) {
+
+	}
+
 	@When("User clicks on sign in button")
 	public void user_clicks_on_sign_in_button() {
 		loginPage.clickSignInButton();
-	
+
 	}
 
 	@When("User lands on dashboard page")
@@ -58,15 +59,14 @@ public class LoginStepDefinition extends TestBase {
 		String expectedTitle = "Codefios";
 		String actualTitle = loginPage.getPageTitle();
 		Assert.assertEquals(expectedTitle, actualTitle);
-//		takeScreenshot(driver);
-		takeScreenshot(driver);
+	    takeScreenshot(driver);
 	}
-	
+
 //		@After
-//	public void tearDown() {
-//		driver.close();
-//		driver.quit();
-//		
-//}
-	
+	public void tearDown() {
+		driver.close();
+		driver.quit();
+		
+}
+
 }
